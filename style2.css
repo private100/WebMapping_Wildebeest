@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.map {
+  max-width: 100%;
+  position: relative;
+}
+
+svg#MigrationArea {
+  width: 550px;
+  height: 550px;
+  max-width: 100%;
+  position: relative;
+  margin: 10px 10px 10px 40px;
+  border: 1px solid #dddddd;
+}
+
+.admin {
+  fill: #aaaaaa;
+  stroke: #555555;
+  opacity: 0.6;
+}
+
+.admin:hover {
+  stroke-width: 1px;
+  fill: #dddddd;
+}
+
+path.natural {
+  fill: #ABDE96;
+  stroke-dasharray: 10 5 10 5;
+}
+
+.natural:hover {
+  fill: #089f19;
+}
+
+text.natural {
+  font-style: italic;
+}
+svg#Africa path#Kenia{
+  fill: #5bcdf7;
+}
+svg#Africa path#Tasania{
+  fill: #5bcdf7;
+}
+svg#Africa path#Kenia:hover{
+  fill: #f8e696;
+}
+svg#Africa path#Tasania:hover{
+  fill: #f8e696;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    background: url(Wbeest.jpg)left top no-repeat;
+    background-attachment: fixed;
+    text-align: justify;
+}
+h1 {
+color: #901515;
+font-size: 36px;
+font-family: "Playfair Display", serif;
+font-style: italic;
+font-weight: 700;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+h2 {
+color: #901515;
+font-size: 26px;
+font-family: "Playfair Display", serif;
+font-style: italic;
+font-weight: 700;
+margin-top: 80px;
+margin-bottom: 20px;
+}
+.header {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: #222222;
+}
+.header h1 {
+    color: #eeeeee;
+    margin-left: 40px;
+    margin-top: 20px;
+    float: left;
+}
+
+.container {
+    height: inherit;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    margin-top: 80px;
+    position: relative;
+    background-color: #ffffff; 
+    box-shadow: 0 0 2px #aaaaaa;
+}
+
+.textContent {
+    padding: 20px;
+}
+.textContent h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.textContent h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.textContent h4 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+em {
+    font-style: normal;
+    font-weight: bold;
+    color: #9d3203;
+}
+
+a {
+    text-decoration: none;
+    color: #9d3203;
+}
+#SerengetiIntro p {
+    margin-bottom: 20px;
+}
+
+.googleMap {
+    width: 600px;
+    height: 600px;
+    margin: 30px;
+    max-width: 100%;
+}
+/*map1*/
+
+.map1 .marker1 {
+    position: absolute;
+    width: 2%;
+    height: 2%;
+    top: 50%;
+    left: 50%;
+	margin-left: -13.35px;
+    margin-top: -15.35px;
+    background-image: url('np.png');
+	opacity:0.5;
+} 
+
+.gmap{
+
+position: relative, center;
+
+}
+
+/* Navigation bar */
+#menu {
+    display: none;
+}
+
+.nav ul {
+    margin-left: 40px;
+    float: left;
+}
+
+.nav li {
+  margin: 25px 20px 0 20px;
+  padding: 15px 0 12px 0;
+  display: inline-block; 
+  background-color: #222222;
+}
+.nav a {
+    color: #eeeeee;
+}
+.nav li:hover {
+    border-bottom: 3px solid #eeeeee;
+}
+#backgoundimgSource {
+    display: none;
+}
+
+/* Responsvive */
+@media (min-width: 1000px) {
+  .container {
+  width: 960px;
+  height: inherit;
+  padding-bottom: 20px;
+  margin: 0 auto;
+margin-top: 80px;
+  }
+#backgoundimgSource {
+    display: inline;
+}
+}
+
+@media (max-width: 840px) {
+    .content{
+padding: 15px;
+font-size: 16px;
+width: 250px;
+}
+  .nav li {
+    font-size: 14px;
+    margin: 20px 10px 0 0;
+  }
+  .header h1 {
+      font-size: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+.nav ul {
+    margin-left: 20px;
+}
+
+}
+
+@media (max-width: 640px) {
+      .header h1 {
+      font-size: 24px;
+    margin-left: 2px;
+    margin-top: 20px;
+  }
+      #menu {
+    display: block;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      height: 40px;
+      width: 80px;
+      margin: 20px 10px 0 0;
+    font-size: 16px;
+      text-align: center;
+vertical-align: bottom;
+      line-height: 40px;
+      color: #eeeeee;
+          cursor: pointer;
+  }
+    .nav {
+        opacity: 0;
+    }
+    .nav.active {
+        opacity: 1;
+    }
+    .nav ul {
+        position: absolute;
+        top: 80px;
+        right: 10px;
+        
+    }
+    
+  .nav ul li {
+    display: block;
+      height: 30px;
+      width: 60px;
+      line-height: 30px;
+      text-align: right;
+      float: right;
+      margin: 0;
+      padding: 0 10px 0 0;
+      width: 50%;
+  }
+    .nav li:hover {
+    border-bottom: 0;
+}
+    .nav a:hover {
+        border-bottom: 2px solid #eeeeee;
+    }
+    svg#MigrationArea {
+  margin: 10px 0px;
+        border-left: 0px;
+        border-right: 0px;
+}
+    .googleMap {
+    width: 300px;
+    height: 400px;
+    margin: 5px;
+    max-width: 100%;
+}
+}
